@@ -15,9 +15,9 @@ func main() {
 	http.HandleFunc("/join", join)
 	http.HandleFunc("/", index)
 
-	 if err := http.ListenAndServe(":8080", nil); err != nil {
-        log.Fatal("ListenAndServe:", err)
-    }
+	if err := http.ListenAndServe(":8080", nil); err != nil {
+		log.Fatal("ListenAndServe:", err)
+	}
 }
 
 func join(w http.ResponseWriter, r *http.Request) {

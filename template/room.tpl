@@ -83,10 +83,10 @@
 
         function addMessage(textMessage) {
 
-            $("#msg-template .userpic").html("<img class=\"weui-media-box__thumb\" style='border-radius:0.2em' src='" + textMessage.gravatar + "'>")
-            $("#msg-template .msg-time").html(textMessage.time);
-            $("#msg-template .uid").html(textMessage.uid);
-            $("#msg-template .content").html(textMessage.content);
+            $("#msg-template .userpic").html("<img class=\"weui-media-box__thumb\" style='border-radius:0.2em' src='" + textMessage.Gravatar + "'>")
+            $("#msg-template .msg-time").html(textMessage.Time);
+            $("#msg-template .uid").html(textMessage.Uid);
+            $("#msg-template .content").html(textMessage.Content);
             $("#chat-messages").append($("#msg-template").html());
             $('#chat-column')[0].scrollTop = $('#chat-column')[0].scrollHeight;
             var div_chat_message = document.getElementById("chat-messages");
@@ -97,7 +97,7 @@
             $("#msg-template .userpic").html("")
             $("#msg-template .msg-time").html("");
             $("#msg-template .uid").html("");
-            $("#msg-template .content").html(textMessage.content);
+            $("#msg-template .content").html(textMessage.Content);
             $("#chat-messages").append($("#msg-template").html());
             $('#chat-column')[0].scrollTop = $('#chat-column')[0].scrollHeight;
             var div_chat_message = document.getElementById("chat-messages");
