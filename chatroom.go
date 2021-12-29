@@ -29,7 +29,6 @@ func join(w http.ResponseWriter, r *http.Request) {
 	}
 
 	t, _ := template.ParseFiles("./template/room.tpl")
-	log.Println(uid + " join")
 	_ = t.Execute(w, map[string]string{"uid": uid})
 }
 
